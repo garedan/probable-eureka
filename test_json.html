@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumé</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css"
+	    crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">	
+	
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans'>
+
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+</head>
+<body>
+	<header id="header" class="header-stick">
+		<nav class="navbar">
+			<div class="container">
+
+				<!-- Navbar Header -->
+				<div class="navbar-header">
+					<!-- Collapse Button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+					<!-- /Collapse Button -->
+					<!-- logo -->
+					<a class="navbar-brand" href="#hero1">
+					   <img src="images/logo.png" alt="">
+					</a>
+					<!-- /logo -->
+				</div>
+				<!-- / Navbar Header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="navigation">
+					<ul class="nav navbar-nav">                  
+						<li>
+							<a href="#about">Acerca de...</a>
+						</li>   
+						<li>
+							<a href="#education2">Educación</a>
+						</li>  
+						<li>
+							<a href="#experience">Experiencia</a>
+						</li>  
+						<li>
+							<a href="#features">Habilidades</a>
+						</li>              
+						<li>
+							<a href="#contact">Contacto</a>
+						</li> 
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+	</header>
+	<section id="body" class="">	
+		<div class="section-mini-hero" id="hero1" style="background: #245633;">
+			<div class="container">
+				<div class="profile-pic">
+					<img id="image2" src="" alt=""/>
+				</div>
+				<h1 class="title1 mini-hero-title">Hola, soy <strong id="name2"></strong></h1>
+				<p class="title2" id="edad" style="color: #fff;">32</p>
+				<h2 class="title2 mini-hero-subtitle">Designer & Web Developer</h2>	
+				<button onclick="getDataFromJSON(); getDataFromAPI()" id="btnOtro" class="btn btn-default btn3">otro</button>
+
+			</div>
+		</div>
+		<!-- / Section: About  -->
+		<div class="section-about" id="about">
+			<div class="container">
+				<!-- Section Title -->
+				<!-- <br><br> --><div class="separador" ></div>
+				<h2 class="title-of-section title-border">Sobre mi</h2>
+				<div class="separador" ></div><br>
+				<!-- <br>
+				<br>
+				<br>
+				<br> -->
+				<!-- /Section Title -->	
+			</div>
+			<div class="container about-container">
+				<div class="row contrast">
+					<!-- Left Column -->
+					<!-- /Left Column -->
+					<!-- Right Column -->
+					<div class="col-sm-12"> 
+						<div class="padding-box" >
+							<!-- row -->
+							<div class="row">
+								<!-- col -->
+								<div class="col-sm-6">
+									<h3 class="title3">Dirección</h3>
+									<p id="direccion">??</p>
+								</div>
+								<!-- /col -->
+								<!-- col -->
+								<div class="col-sm-6">
+									<h3 class="title3">Email</h3>
+									<p id="email2">dotrex@dotrex.co</p>
+								</div>
+								<!-- /col -->
+							</div>	
+							<!-- /row -->
+
+							<!-- row -->
+							<div class="row">
+								<!-- col -->
+								<div class="col-sm-6">
+									<h3 class="title3">Telefono</h3>
+									<p id="telefono">123 456 789 0</p>
+								</div>
+								<!-- /col -->
+								<!-- col -->
+								<div class="col-sm-6">
+									<h3 class="title3">Encontrame en</h3>
+									<!-- Social Icons -->
+									<div class="social-icons">
+										<a href="#"><i class="fa fa-instagram"></i></a>
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="#"><i class="fa fa-youtube"></i></a>
+									</div>
+									<!-- /Social Icons -->
+								</div>
+								<!-- /col -->
+								
+							</div>	
+							<!-- /row -->					
+						</div>
+					</div>
+					<!-- /Right Column -->
+				</div>
+				
+			</div>
+			
+		</div>	
+		<!-- / Section: About  -->
+
+		<div class="container" id="experience">
+			<br>
+			<h2 class="title-of-section title-border">Experiencia</h2>
+		</div>
+		<div id="propertydiv">
+			<div class='section section-features'> 
+			</div>
+		</div>
+
+		<div class="container" id="education2">
+			<br>
+			<br>
+			<br>
+			<h2 class="title-of-section title-border">Educacion</h2>
+		</div>
+		<div id="valuediv" >
+			<div class='section section-features'> 
+			</div>
+		</div>
+
+		<div class="section section-features" id="features">
+			<div class="container">	
+				<h2 class="title-of-section title-border">Habilidades</h2>
+					<div class="contOut clearfix">
+					  <div class="">
+						
+						<!-- <div class="divider"></div> -->
+					  </div>
+					</div>
+				<!-- Features -->
+				<div class="row" >				
+					<!-- item -->
+					<div class="col-sm-3">
+						<div class="feature-item">
+							<div class="feature-icon">
+								<i class="fa fa-photo"></i>
+							</div>
+							<h2 class="feature-title">Graphic Design</h2>
+							<div class="feature-description">
+								<p>Projects with concept.</p>
+							</div>
+						</div>					
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="col-sm-3">
+						<div class="feature-item">
+							<div class="feature-icon">
+								<i class="fa fa-laptop"></i>
+							</div>
+							<h2 class="feature-title">Web Design</h2>
+							<div class="feature-description">
+								<p>Projects with concept.</p>
+							</div>
+						</div>					
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="col-sm-3">
+						<div class="feature-item">
+							<div class="feature-icon">
+								<i class="fa fa-globe"></i>
+							</div>
+							<h2 class="feature-title">Web Development</h2>
+							<div class="feature-description">
+								<p>Projects with concept.</p>
+							</div>
+						</div>					
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="col-sm-3">
+						<div class="feature-item">
+							<div class="feature-icon">
+								<i class="fa fa-line-chart"></i>
+							</div>
+							<h2 class="feature-title">Social Media</h2>
+							<div class="feature-description">
+								<p>Projects with concept.</p>
+							</div>
+						</div>					
+					</div>
+					<!-- /item -->
+				</div>
+				<!-- /features -->	
+			</div>
+		</div>
+
+		<div id="show-data"></div>
+		<div class="section section-contact" id="contact">
+			<div class="container">
+				<!-- Section Title -->
+				<h2 class="title-of-section title-border">Contacto</h2>
+				<!-- /Section Title -->
+				<!-- row -->
+				<div class="row" >
+					<!-- col -->
+					<div class="col-sm-5">
+						<!-- box -->
+						<div class="contact-box">
+							<h4 class="title4">Address: </h4>
+							<p id="direccionForm">?</p>
+							<!-- <p>451 Lorem Ipsum, London - Uk</p> -->
+							<h4 class="title4">Phone: </h4>
+							<p id="phoneForm">+61 3 8376 6284</p>
+							<h4 class="title4">Mail: </h4>
+							<p id="emailForm">john.Rex@dotrex.com</p>
+							<!-- Social Icons -->
+							<div class="social-icons">
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-youtube"></i></a>
+							</div>
+							<!-- /Social Icons -->
+						</div>
+						<!-- /box -->					
+					</div>
+					<!-- /col -->
+					<!-- col -->
+					<div class="col-sm-7">
+						<!-- form -->
+						<form action="" id="contactForm">
+							<!-- item -->            
+							<div class="form-group">
+							  <input type="text" class="form-control required" id="name" name="name" placeholder="Name*" required>
+							</div>    
+							<!-- /item -->
+							<!-- item -->        
+							<div class="form-group">
+							  <input type="email" class="form-control required" id="email" name="email" placeholder="Email" required>
+							</div>    
+							<!-- /item --> 
+							<!-- item -->            
+							<div class="form-group">
+							  <input type="text" class="form-control required" id="subject" name="subject" placeholder="Subject" required>
+							</div>    
+							<!-- /item -->
+							<!-- item -->            
+							<div class="form-group">
+							  <textarea class="form-control required" name="message" id="message" placeholder="Message" required></textarea>
+							</div>    
+							<!-- /item --> 
+							<!-- item -->            
+							<div class="form-group form-send">
+							  <input type="submit" value="enviar" class="btn btn-default btn3">
+							</div>    
+							<!-- /item -->                
+						</form>
+						<!-- /form -->
+					</div>
+					<!-- /col -->
+				</div>
+				<!-- /row -->
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="secondary-footer">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-6">
+						<p class="footer-quote"><strong>"The power of imagination makes us infinite."</strong> <i>- John Muir</i></p>
+					</div>
+
+					<div class="col-sm-6 text-right">
+					   
+					</div>
+				</div>
+
+			</div>        
+		</div>  
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://randomuser.me/dist/all.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/7cd0606f81.js" crossorigin="anonymous"></script> -->
+    <script>
+		
+	</script>	
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
