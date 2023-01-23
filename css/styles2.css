@@ -28,6 +28,7 @@ body {
   font-size: 14px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   background: #FFD171;
+  
   }
   
   
@@ -124,11 +125,11 @@ p {
   border-radius: 6px;
   height: 50px;
   font-size: 14px;
-  color: #111;
+  /* color: #111; */
   margin-bottom: 5px;
   border: 2px solid #ffffff;
   font-family: 'PT Sans', sans-serif;
-  background-color: #fff;
+  background-color: #340298;
   color: #ffffff;
   font-weight: bold;
 }
@@ -225,6 +226,9 @@ textarea.form-control {
 .footer-quote {
   padding-top: 4px;
   margin-bottom: 0;
+}
+.footer-img {
+  background: #fff;
 }
 /* ==========================================================
 ! Pages: General
@@ -622,7 +626,22 @@ p {
   height: 11px;
 }
 
-@media(max-width: 500px) {
+
+@media(max-width: 450px) {
+  .contOut .contIn .moreInfo, .contOut .contIn p.tagline {
+    font-size: 12px;
+  }
+}
+
+.lista li {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+ }
+ 
+ 
+ 
+/*  @media(max-width: 350px) {
   .middle .job p .brag {
     padding-left: 20px;
     max-height: none;
@@ -643,15 +662,6 @@ p {
   .contOut .contIn .moreInfo {
     font-size: 14px;
   }
-}
-@media(max-width: 450px) {
-  .contOut .contIn .moreInfo, .contOut .contIn p.tagline {
-    font-size: 12px;
-  }
-}
-
-.lista li {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
- }
+} */
+ 
+ 
